@@ -120,3 +120,7 @@ export function parseTickets(json: string): Ticket[] {
   }
   return tickets;
 }
+
+export function firstTitle(tickets: readonly Ticket[]): string {
+  return tickets[0]?.title ?? "Заявок немає";
+}
